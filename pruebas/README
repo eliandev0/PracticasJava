@@ -1,0 +1,31 @@
+El proyecto "Calculadora de propinas v1.0" es un proyecto para la clase de Entornos de desarrollo, proponiendo como objetivo principal la creación de una calculadora de propinas, la cual funciona de la siguiente forma:
+  1. Se introduce un valor en "Importe factura". Este importe será la base por la que se genere la propina.
+  2. Se selecciona en un desplegable "Porcentaje propina (%)", con la cantidad a multiplicar por "Importe factura"
+  3. El resultado de la multiplicación de "Importe factura" * "Porcentaje propina (%)" se divide entre 100, mostrando este resultado en "Importe propina"
+  4. A continuación se suma en el apartado "Factura total" la cantidad de "Importe factura" + "Importe propina", dando como cantidad la factura total a abonar.
+  5. Para finalizar contamos con un botón de "NUEVA FACTURA", el cual vuelve todos los parametros a "cero" para volver a introducir nuevamente valores.
+
+El compilado se ha realizado desde la plataforma de Eclipse: 
+Pasos:
+1.Botón derecho en "proyecto" -> Team -> Share Proyect
+2.Creamos un repositorio local -> Le damos nombre -> Finish.
+3.Botón derecho en el "proyecto" -> Team -> Commit -> "Add all files including not selected ones to the index" (gitadd.) -> Creamos un comentario -> Commit -> Push HEAD
+4.En el apartado URI: 
+    a)Creamos nuevo repositorio en GitHub
+    b)Copiamos la URL proporcionada
+    c)La pegamos en Eclipse, apartado URI
+5.Apartado "Authentication" -> User: "nuestrousuario" -> Password:
+    a)En el perfil de GitHub
+    b)Settings
+    c)Developer setting
+    d)Personal access tokens
+    e)Generate new token (Classic)
+    f)Añadimos nombre en "Note"
+    g)Seleccionamos pestaña "repo"
+    h)Copiamos token
+    i)Utilizamos como "Password
+6.Preview -> Preview -> User: "nuestrousuario" Password: "tokengenerado" -> Log in -> Close
+
+Con los pasos anteriormente mencionados conseguimos subir el repositorio del proyecto a GitHub para poder compartirlo.
+                                                          
+
