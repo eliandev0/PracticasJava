@@ -1,1 +1,1 @@
-"PracticasJava" es el repositorio de los proyectos desarrollados para el curso "Desarrollo de Aplicaciones Multiplataforma", donde compartiré proyectos de aprendizaje continuos elaborados para clase o práticas de contenido programado en Java
+
