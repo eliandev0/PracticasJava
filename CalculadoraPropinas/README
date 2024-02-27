@@ -1,0 +1,98 @@
+**CalculadoraPropina**
+
+El programa se ha desarrollado en Java, utilizando Eclipse, Windows Builder. 
+Este programa tiene como objetivo principal calcular un porcentaje de un valor introducido para sumarlo a esta misma cantidad, con el fin de calcular el valor de una propina.
+
+------------------------------------
+
+1. INSTALACIÓN
+
+Requisitos previos instalados. 
+
+- Eclipse IDE for Enterprise, Java and Web Developers (en su última versión)
+- Windows Builder
+
+Pasos para ejecutar.
+
+- Descargamos la carpeta "CalculadoraPropinas"
+- Abrimos Eclipse -> File -> Import
+- Seleccionamos General -> Projects from Folder or Archive
+- En el apartado Import source, Directory...
+- Buscamos la carpeta, Seleccionar carpeta
+- Finish
+
+
+2. USO
+
+- IMPORTE FACTURA, recoje un importe introducido por el usuario en un JTextField, el cual es escuchado para multiplicarlo y dividirlo posteriormente.
+
+importeFactura = new JTextField();
+        importeFactura.setFont(new Font("Gadugi", Font.PLAIN, 17));
+        importeFactura.setBounds(35, 146, 168, 38);
+        frmCalculadoraDePropinas.getContentPane().add(importeFactura);
+        importeFactura.setColumns(10);
+
+
+
+- PORCENTAJE PROPINA es un JComboBox, desplegable con varios valores para asignar un porcentaje de propina, valor el cual se multiplicará por IMPORTE FACTURA y se dividirá entre 100.
+
+porcentajePropina = new JComboBox<>();
+        porcentajePropina.setFont(new Font("Gadugi", Font.PLAIN, 17));
+        porcentajePropina.setModel(new DefaultComboBoxModel<>(new String[] {"", "5", "10", "15", "20", "25", "30", "40", "50"}));
+        porcentajePropina.setBounds(35, 235, 72, 31);
+        frmCalculadoraDePropinas.getContentPane().add(porcentajePropina);
+
+
+
+- IMPORTE PROPINA es un JTextField, muestra la operación escuchada anteriormente de; IMPORTE FACTURA * PORCENTAJE PROPINA / 100, dando como resultado el importe de una propina.
+
+importePropina = new JTextField();
+        importePropina.setFont(new Font("Gadugi", Font.PLAIN, 17));
+        importePropina.setEditable(false);
+        importePropina.setBounds(35, 326, 168, 38);
+        frmCalculadoraDePropinas.getContentPane().add(importePropina);
+        importePropina.setColumns(10);
+
+
+
+- FACTURA TOTAL es un JTextField, muestra la sumatoria de IMPORTE FACTURA + IMPORTE PROPINA, dando como resultado el valor total de una cuenta con el porcentaje sumado de propina a la misma.
+
+facturaTotal = new JTextField();
+        facturaTotal.setFont(new Font("Gadugi", Font.BOLD, 17));
+        facturaTotal.setEditable(false);
+        facturaTotal.setBounds(35, 426, 168, 38);
+        frmCalculadoraDePropinas.getContentPane().add(facturaTotal);
+        facturaTotal.setColumns(10);
+
+
+
+- NUEVA FACTURA es un JButton que restablece los campos a cero, para volver a introducir valores en una "Nueva factura".
+
+JButton nuevaFactura = new JButton("NUEVA FACTURA");
+        nuevaFactura.setBackground(new Color(234, 183, 28));
+        nuevaFactura.setFont(new Font("Gadugi", Font.BOLD, 14));
+        nuevaFactura.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                limpiarCampos();
+            }
+        });
+        nuevaFactura.setBounds(35, 515, 291, 38);
+        frmCalculadoraDePropinas.getContentPane().add(nuevaFactura);
+
+private void limpiarCampos() {
+        importeFactura.setText("");
+        porcentajePropina.setSelectedIndex(0); // Seleccionar el primer índice del JComboBox
+        importePropina.setText("");
+        facturaTotal.setText("");
+    }
+
+
+- Visualización correcta de las imágenes introduciendo la url de la ubicación de la carpeta con la imagen ico.png en los siguientes fragmentos de códigos.
+
+frmCalculadoraDePropinas.setIconImage(Toolkit.getDefaultToolkit().getImage("INTRODUCIR RUTA ICO.PNG"));
+
+
+JLabel lblNewLabel = new JLabel("");
+        lblNewLabel.setIcon(new ImageIcon("INTRODUCIR RUTA ICO.PNG"));
+        lblNewLabel.setBounds(35, 36, 51, 63);
+        frmCalculadoraDePropinas.getContentPane().add(lblNewLabel);
