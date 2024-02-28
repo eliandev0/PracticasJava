@@ -6,13 +6,13 @@ Se nos plantea un problema. Este programa tiene como objetivo principal generar 
 Al ejecutar el código que se nos entrega principalmente podemos observar que se nos generan ceros (0) en la misma cantidad que introducimos el numero por teclado.
 
 Para encontrar el fallo se nos plantea el uso de "Debuggin y Puntos de ruptura", utilizaremos el archivo corrupto "NumerosAleatoriosFallo".
-<ul>
-        <li>En el propio programa eclipse damos doble click en la linea o lineas de código que sospechamos pueda contener el error.</li>
-        <li>Iniciamos el modo Debug.</li>
-        <li>Obsevamos el comportamiento del codigo para obtener conclusiones.</li>
-        <li>Vamos modificando el código por donde creemos que puede producirse el fallo</li>
-        <li>Volvemos a ejecutar Debug hasta corregir el error</li>
-</ul>
+
+En el propio programa eclipse damos doble click en la linea o lineas de código que sospechamos pueda contener el error.
+Iniciamos el modo Debug.
+Obsevamos el comportamiento del codigo para obtener conclusiones.
+Vamos modificando el código por donde creemos que puede producirse el fallo.
+Volvemos a ejecutar Debug hasta corregir el error.
+
 ------------------------------------
 
 1. INSTALACIÓN
