@@ -1,1 +1,38 @@
+**NumerosAleatorios**
+
+El programa se ha desarrollado en Java, utilizando Eclipse.
+
+Se nos plantea un problema. Este programa tiene como objetivo principal generar la cantidad de numeros aleatorios que el usuario introduzca en la ventana mediante el teclado.
+Al ejecutar el código que se nos entrega principalmente podemos observar que se nos generan ceros (0) en la misma cantidad que introducimos el numero por teclado.
+
+Para encontrar el fallo se nos plantea el uso de "Debuggin y Puntos de ruptura", utilizaremos el archivo corrupto "NumerosAleatoriosFallo".
+<ul>
+        <li>En el propio programa eclipse damos doble click en la linea o lineas de código que sospechamos pueda contener el error.</li>
+        <li>Iniciamos el modo Debug.</li>
+        <li>Obsevamos el comportamiento del codigo para obtener conclusiones.</li>
+        <li>Vamos modificando el código por donde creemos que puede producirse el fallo</li>
+        <li>Volvemos a ejecutar Debug hasta corregir el error</li>
+</ul>
+------------------------------------
+
+1. INSTALACIÓN
+
+Requisitos previos instalados. 
+
+- Eclipse IDE for Enterprise, Java and Web Developers (en su última versión)
+
+Pasos para ejecutar.
+
+- Descargamos el archivo "CalculadoraPropinasFallo"
+- Abrimos Eclipse -> File -> Import
+- Seleccionamos General -> Projects from Folder or Archive
+- En el apartado Import source, File
+- Buscamos el archivo, Seleccionar
+- Finish
+
+
+2. USO
+
+Como se mencionaba anteriormente, este programa tiene como objetivo principal generar la cantidad de numeros aleatorios que el usuario introduzca en la ventana mediante el teclado.
+Se propone un fallo a solucionar, incluso como se muestra en las capturas de pantalla adjuntas, añadir mejoras al código para una mejor experiencia de usuario.
 
